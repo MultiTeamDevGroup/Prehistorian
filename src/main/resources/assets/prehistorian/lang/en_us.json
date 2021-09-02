@@ -7,8 +7,7 @@
     "ENTITIES":"MOD ENTITIES",
 
     "GUI":"MOD GUI",
-    "itemGroup.prehistorian_items": "Prehistorian - Items",
-    "itemGroup.prehistorian_blocks": "Prehistorian - Blocks",
+    "itemGroup.prehistorian_main": "Prehistorian - Main",
     "itemGroup.prehistorian_creatures": "Prehistorian - Creatures",
 
     "SOUND":"MOD SOUND"
