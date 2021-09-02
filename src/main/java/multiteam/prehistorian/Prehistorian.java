@@ -1,6 +1,8 @@
 package multiteam.prehistorian;
 
 import multiteam.multicore_lib.setup.utilities.ItemGroupTool;
+import multiteam.prehistorian.main.Registration;
+import multiteam.prehistorian.main.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -24,10 +26,13 @@ public class Prehistorian
     public static final Logger LOGGER = LogManager.getLogger();
 
     public static final ItemGroupTool PREHISTORIAN_ITEMS = new ItemGroupTool("prehistorian_items", () -> new ItemStack(Items.AIR));
-    public static final ItemGroupTool PREHISTORIAN_BLOCKS = new ItemGroupTool("prehistorian_blocks", () -> new ItemStack(Items.AIR));
+    public static final ItemGroupTool PREHISTORIAN_BLOCKS = new ItemGroupTool("prehistorian_blocks", () -> new ItemStack(ModBlocks.FOSSILISED_STONE.get()));
     public static final ItemGroupTool PREHISTORIAN_CREATURES = new ItemGroupTool("prehistorian_creatures", () -> new ItemStack(Items.AIR));
 
     public Prehistorian() {
+
+        Registration.register();
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);

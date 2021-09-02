@@ -80,8 +80,8 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-1.16.5:7.6.4.88:api")
     runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.6.4.88")
 
-    compileOnly fg.deobf("multiteam.multicorelib:multicore_lib:1.16.5-0.0.1.4")
-    runtimeOnly fg.deobf("multiteam.multicorelib:multicore_lib:1.16.5-0.0.1.4")
+    compileOnly fg.deobf("multiteam.multicorelib:multicore_lib:1.16.5-0.0.1.5")
+    runtimeOnly fg.deobf("multiteam.multicorelib:multicore_lib:1.16.5-0.0.1.5")
 
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.16.5:3.0.41')
 
