@@ -2,6 +2,7 @@ package multiteam.prehistorian.data.client;
 
 import mcp.MethodsReturnNonnullByDefault;
 import multiteam.prehistorian.Prehistorian;
+import multiteam.prehistorian.main.block.ModBlocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -17,6 +18,6 @@ public class ModBlockStateProvider  extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        //simpleBlock(ModBlocks.METAL_1.get());
+        simpleBlock(ModBlocks.FOSSILISED_STONE.get());
     }
 }

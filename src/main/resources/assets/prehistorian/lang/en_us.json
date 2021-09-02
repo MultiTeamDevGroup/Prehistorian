@@ -1,5 +1,6 @@
 {
     "BLOCKS":"MOD BLOCKS",
+    "block.prehistorian.fossilised_stone": "Fossilised Stone",
 
     "ITEMS":"MOD ITEMS",
 
@@ -10,7 +11,5 @@
     "itemGroup.prehistorian_blocks": "Prehistorian - Blocks",
     "itemGroup.prehistorian_creatures": "Prehistorian - Creatures",
 
-    "SOUND":"MOD SOUND",
-    "item.scrapcraft.spudgun.shoot.sub":"Spudgun shooting",
-    "item.scrapcraft.spudgun.shoot_fail.sub":"Spudgun failing to shoot"
+    "SOUND":"MOD SOUND"
 }
