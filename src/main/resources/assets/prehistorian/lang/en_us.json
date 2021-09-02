@@ -1,0 +1,16 @@
+{
+    "BLOCKS":"MOD BLOCKS",
+
+    "ITEMS":"MOD ITEMS",
+
+    "ENTITIES":"MOD ENTITIES",
+
+    "GUI":"MOD GUI",
+    "itemGroup.prehistorian_items": "Prehistorian - Items",
+    "itemGroup.prehistorian_blocks": "Prehistorian - Blocks",
+    "itemGroup.prehistorian_creatures": "Prehistorian - Creatures",
+
+    "SOUND":"MOD SOUND",
+    "item.scrapcraft.spudgun.shoot.sub":"Spudgun shooting",
+    "item.scrapcraft.spudgun.shoot_fail.sub":"Spudgun failing to shoot"
+}
