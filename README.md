@@ -15,4 +15,4 @@ Not yet available
 # Community
 
 If you want to be part of our community, join the discord server!
-[[Discord Invite Link]]( not yet)
+[[Discord Invite Link]](https://discord.gg/sY3jRG8r5T)
