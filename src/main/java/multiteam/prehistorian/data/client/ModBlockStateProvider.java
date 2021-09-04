@@ -18,6 +18,7 @@ public class ModBlockStateProvider  extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(ModBlocks.FOSSILISED_STONE.get());
+        simpleBlock(ModBlocks.ANCIENT_STONE.get());
+        simpleBlock(ModBlocks.FOSSIL_ANCIENT_STONE.get());
     }
 }

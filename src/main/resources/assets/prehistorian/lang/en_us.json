@@ -1,6 +1,7 @@
 {
     "BLOCKS":"MOD BLOCKS",
-    "block.prehistorian.fossilised_stone": "Fossilised Stone",
+    "block.prehistorian.ancient_stone": "Ancient Stone",
+    "block.prehistorian.fossil_ancient_stone": "Ancient Stone with Fossils",
 
     "ITEMS":"MOD ITEMS",
 

@@ -21,7 +21,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //Blockitems
-        withExistingParent("fossilised_stone", modLoc("block/fossilised_stone"));
+        withExistingParent("ancient_stone", modLoc("block/ancient_stone"));
+        withExistingParent("fossil_ancient_stone", modLoc("block/fossil_ancient_stone"));
 
         //Items
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));

@@ -13,7 +13,8 @@ import net.minecraftforge.fml.RegistryObject;
 
 public class ModBlocks {
 
-    public static final RegistryObject<Block> FOSSILISED_STONE = RegistrationTool.registerWithItem("fossilised_stone", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(1.5f,6).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)), new Item.Properties().tab(Prehistorian.PREHISTORIAN_MAIN), Registration.BLOCKS, Registration.ITEMS);
+    public static final RegistryObject<Block> ANCIENT_STONE = RegistrationTool.registerWithItem("ancient_stone", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(1.5f,6).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)), new Item.Properties().tab(Prehistorian.PREHISTORIAN_MAIN), Registration.BLOCKS, Registration.ITEMS);
+    public static final RegistryObject<Block> FOSSIL_ANCIENT_STONE = RegistrationTool.registerWithItem("fossil_ancient_stone", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(1.5f,6).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)), new Item.Properties().tab(Prehistorian.PREHISTORIAN_MAIN), Registration.BLOCKS, Registration.ITEMS);
 
 
     public static void register(){}
