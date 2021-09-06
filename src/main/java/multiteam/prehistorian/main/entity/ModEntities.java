@@ -13,7 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 public class ModEntities {
 
-    public static final RegistryObject<EntityType<Pterofly>> PTEROFLY = RegistrationTool.buildEntity(Pterofly::new, Pterofly.class, 1.0F, 3.0F, EntityClassification.CREATURE, 8, 3, Registration.ENTITY_TYPES); //3 for update interval is default
+    public static final RegistryObject<EntityType<Pterofly>> PTEROFLY = RegistrationTool.buildEntity(Pterofly::new, Pterofly.class, 0.7F, 0.4F, EntityClassification.CREATURE, 8, 3, Registration.ENTITY_TYPES); //3 for update interval is default
 
 
     public static void clientSetup(FMLClientSetupEvent event) {

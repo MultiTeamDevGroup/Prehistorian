@@ -4,6 +4,8 @@ import multiteam.multicore_lib.setup.utilities.ItemGroupTool;
 import multiteam.prehistorian.main.Registration;
 import multiteam.prehistorian.main.block.ModBlocks;
 import multiteam.prehistorian.main.entity.ModEntities;
+import multiteam.prehistorian.main.item.MobSpawnEggItem;
+import multiteam.prehistorian.main.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -27,7 +29,7 @@ public class Prehistorian
     public static final Logger LOGGER = LogManager.getLogger();
 
     public static final ItemGroupTool PREHISTORIAN_MAIN = new ItemGroupTool("prehistorian_main", () -> new ItemStack(ModBlocks.FOSSIL_ANCIENT_STONE.get()));
-    public static final ItemGroupTool PREHISTORIAN_CREATURES = new ItemGroupTool("prehistorian_creatures", () -> new ItemStack(Items.AIR));
+    public static final ItemGroupTool PREHISTORIAN_CREATURES = new ItemGroupTool("prehistorian_creatures", () -> new ItemStack(ModItems.PTEROFLY_SPAWN_EGG.get()));
 
     public Prehistorian() {
 
@@ -43,6 +45,7 @@ public class Prehistorian
 
     private void setup(final FMLCommonSetupEvent event) {
         ModEntities.applyAttributes();
+        MobSpawnEggItem.initUnaddedEggs();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

@@ -2,6 +2,7 @@ package multiteam.prehistorian.data.client;
 
 import mcp.MethodsReturnNonnullByDefault;
 import multiteam.prehistorian.Prehistorian;
+import multiteam.prehistorian.main.item.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -26,14 +27,20 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         //Items
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
+        ModelFile spawneggParent = getExistingFile(mcLoc("item/template_spawn_egg"));
 
         //Regular Items
-        builder(itemGenerated, "ancient_fossil");
+        generatedBuilder(itemGenerated, "ancient_fossil");
+        spawneggBuilder(spawneggParent, "pterofly_spawn_egg");
 
     }
 
-    private ItemModelBuilder builder(ModelFile itemGenerated, String name) {
+    private ItemModelBuilder generatedBuilder(ModelFile itemGenerated, String name) {
         return getBuilder(name).parent(itemGenerated).texture("layer0", "item/"+name);
+    }
+
+    private ItemModelBuilder spawneggBuilder(ModelFile spawneggParent, String name) {
+        return getBuilder(name).parent(spawneggParent);
     }
 
 }
