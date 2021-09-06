@@ -3,6 +3,7 @@ package multiteam.prehistorian;
 import multiteam.multicore_lib.setup.utilities.ItemGroupTool;
 import multiteam.prehistorian.main.Registration;
 import multiteam.prehistorian.main.block.ModBlocks;
+import multiteam.prehistorian.main.entity.ModEntities;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -41,11 +42,11 @@ public class Prehistorian
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-
+        ModEntities.applyAttributes();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-
+        ModEntities.clientSetup(event);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {
